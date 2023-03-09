@@ -1,0 +1,280 @@
+/*Reset*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*styling mobile first*/
+
+html {
+	font-family: 'IBM Plex Sans', sans-serif;
+	font-size: 16px;
+}
+body {
+	background: url(./assets/bg-main-mobile.png);
+	background-position: -45%;
+}
+
+header {
+	margin: 1.5rem;
+}
+
+#body-pattern-img {
+	display: none;
+}
+
+#description-section {
+	margin: 1.5rem;
+}
+
+#description-section h1 {
+	font-size: 2.5rem;
+	font-weight: bold;
+	line-height: 3rem;
+}
+
+#description-section p {
+	margin-top: 1.25rem;
+	font-size: 1rem;
+	line-height: 1.625rem;
+}
+
+#design-section {
+	margin-top: 10.375rem;
+	background-color: hsl(244, 23%, 12%);
+	height: 37.5rem;
+	position: relative;
+}
+
+#app-illustration-img {
+	width: 55.55%;
+	position: absolute;
+	left: 21%;
+	top: -16%;
+}
+#section-pattern-img {
+	margin: 0 3rem;
+	width: 70%;
+}
+#call-to-action-article {
+	background-color: hsl(12, 94%, 65%);
+	padding: 2.25rem;
+	color: hsl(20, 33%, 98%);
+	border-radius: 12px;
+	position: absolute;
+	top: 63%;
+}
+
+#call-to-action-article h2 {
+	margin: 0.75rem 0;
+	font-weight: bold;
+	font-size: 2rem;
+	line-height: 2.5rem;
+}
+
+#call-to-action-description {
+	font-size: 1.125rem;
+	line-height: 1.75rem;
+}
+#price-container {
+	margin: 2rem .75rem;
+}
+#price {
+	font-size: 4rem;
+	font-weight: bold;
+}
+#call-to-action-article button {
+	width: 100%;
+	margin: 1rem 0;
+	text-align: center;
+	padding: 1rem;
+	font-size: 1rem;
+	font-weight: bold;
+	line-height: 2rem;
+	border-radius: 12px;
+	border: none;
+	}
+
+#apple-button {
+	background-color: hsl(244, 23%, 12%);
+	color: white;
+}
+#android-button {
+	background-color: hsl(20, 33%, 98%);
+}
+footer {
+	margin: 25rem 1.5rem 2rem;
+}
+
+footer p {
+	margin: 2rem 0;
+	line-height: 1.75rem;
+}
+#email-contact{
+	font-weight: bold;
+}
+
+#ig-icon{
+	margin: 0 1.25rem;
+}
+
+@media only screen and (min-width: 700px){
+	body {
+		position: relative;
+		overflow-x: hidden;
+		background-position: left 25%;
+		background-repeat: repeat-x;
+	}
+	header {
+		margin: 3.75rem 2.5rem;
+	}
+	#body-pattern-img {
+		display: block;
+		position: absolute;
+		width: 34%;
+		top: -6%;
+		right: -5%;
+	}
+	#description-section {
+		margin: 2.5rem;
+		width: 65%;
+	}
+	#description-section h1 {
+		font-size: 4rem;
+		line-height: 4rem;
+	}
+	#description-section p {
+		font-size: 1.125rem;
+	}
+	#design-section {
+		margin: 13.0625rem 2.5rem 6.125rem;
+		border-radius: 12px;
+	}
+	#app-illustration-img {
+		width: 39%;
+		left: 9%;
+		top: -25%;
+		z-index: 1;
+	}
+	#section-pattern-img {
+		width: 40%;
+		position: absolute;
+		left: 25%;
+		top: -7%;
+		z-index: 0;
+	}
+	#call-to-action-article{
+		width: 50%;
+		left: 34%;
+		top: 23%;
+		z-index: 2;
+	}
+	footer {
+		margin: 12rem 2.5rem 5rem;
+	}
+	#inner-footer-wrapper{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	#inner-footer-wrapper p {
+		width: 50%;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	header {
+		margin: 3.8rem 10.3rem;
+	}
+	#body-pattern-img {
+		width: 21.6%;
+		right: 0;
+		top: -7%;
+	}
+	#description-section {
+		margin: 7rem 10.3rem 13rem;
+		width: 60%;
+	}
+	#description-section h1 {
+		font-size: 5.5rem;
+		line-height: 5.5rem;
+	}
+	#description-section p {
+		font-size: 1.25rem;
+		line-height: 2.13rem;
+	}
+	#design-section {
+		margin: 17rem 10.3rem 6.93rem;
+	}
+	#app-illustration-img {
+		width: 28%;
+		top: -35%;
+	}
+	#section-pattern-img{
+		width: 28%;
+	}
+	#call-to-action-article{
+		width: 35%;
+		left: 51%;
+	}
+	#apple-button:hover {
+		background-color: hsl(168, 68%, 64%);
+		cursor: pointer;
+	}
+	#android-button:hover {
+		background-color: hsl(33, 100%, 70%);
+		cursor: pointer;
+	}
+	footer {
+		margin: 5.7rem 10.3rem;
+	}
+	#footer-logo {
+		float: left;
+		margin-right: 25%;
+		margin-top: 5%;
+	}
+}
